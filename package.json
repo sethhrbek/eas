@@ -7,7 +7,9 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "start": "tsc && node dist/index.js"
+    "start": "tsc && node --experimental-specifier-resolution=node dist/index.js",
+    "create:schema": "tsc && node --experimental-specifier-resolution=node dist/create-schema.js",
+    "create:attestation": "tsc && node --experimental-specifier-resolution=node dist/create-attestation.js"
   },
   "dependencies": {
     "@ethereum-attestation-service/eas-sdk": "^0.28.3",
